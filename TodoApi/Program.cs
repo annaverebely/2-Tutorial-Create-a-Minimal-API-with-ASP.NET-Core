@@ -11,6 +11,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+// GET endpoints are examined
 app.MapGet("/todoitems", async (TodoDb db) =>
     await db.Todos.ToListAsync());
 
