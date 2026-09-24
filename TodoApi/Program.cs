@@ -32,6 +32,8 @@ app.MapPost("/todoitems", async (Todo todo, TodoDb db) =>
     return Results.Created($"/todoitems/{todo.Id}", todo);
 });
 
+
+// PUT endpoint is examined
 app.MapPut("/todoitems/{id}", async (int id, Todo inputTodo, TodoDb db) =>
 {
     var todo = await db.Todos.FindAsync(id);
