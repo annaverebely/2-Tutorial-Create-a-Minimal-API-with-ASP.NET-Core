@@ -59,3 +59,5 @@ app.MapDelete("/todoitems/{id}", async (int id, TodoDb db) =>
 });
 
 app.Run();
+
+// "Return values" fejezet elolvasva, nem tartalmaz kód módosítást.
