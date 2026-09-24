@@ -62,6 +62,7 @@ app.MapPatch("/todoitems/{id}", async (int id, TodoPatchDto inputTodo, TodoDb db
     return Results.NoContent();
 });
 
+// DELETE endpoint is examined
 app.MapDelete("/todoitems/{id}", async (int id, TodoDb db) =>
 {
     if (await db.Todos.FindAsync(id) is Todo todo)
