@@ -20,3 +20,32 @@ GET {{TodoApi_HostAddress}}/todoitems
 GET {{TodoApi_HostAddress}}/todoitems/1
 
 ###
+
+POST {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  //Todo
+}
+
+###
+
+PUT {{TodoApi_HostAddress}}/todoitems/{{id}}
+Content-Type: application/json
+
+{
+  //Todo
+}
+
+###
+
+PUT {{TodoApi_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+  {
+    "id": 1,
+    "name": "feed fish",
+    "isComplete": false
+  }
+
+###
