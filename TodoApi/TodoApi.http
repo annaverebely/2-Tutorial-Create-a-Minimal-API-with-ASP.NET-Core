@@ -49,3 +49,23 @@ Content-Type: application/json
   }
 
 ###
+
+POST {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name": "walk dog",
+  "isComplete": true
+}
+
+
+###
+
+PATCH {{TodoApi_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+{
+  "name": "run errands"
+}
+
+###
