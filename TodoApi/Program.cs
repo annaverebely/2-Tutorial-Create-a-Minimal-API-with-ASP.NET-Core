@@ -100,3 +100,4 @@ static async Task<IResult> DeleteTodo(int id, TodoDb db)
 }
 
 // "Return values" fejezet elolvasva, nem tartalmaz kód módosítást.
+// "Troubleshooting with the completed sample" fejezet elolvasva, nem tartalmaz kód módosítást.
